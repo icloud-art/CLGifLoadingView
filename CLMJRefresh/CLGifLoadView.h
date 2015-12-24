@@ -20,4 +20,5 @@ typedef void(^RetryBlock)();
 }
 @property (assign,nonatomic) CLLoadState state;
 @property (assign,nonatomic) RetryBlock retryBlcok;
+- (void)setRetryBlcok:(RetryBlock)retryBlcok;
 @end

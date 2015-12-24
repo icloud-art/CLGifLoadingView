@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Charles";
     self.view.backgroundColor = [UIColor whiteColor];
     self.mTableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.mTableView.delegate =self;
@@ -29,12 +30,13 @@
     CLGifLoadView * gifLoading = [[CLGifLoadView alloc]initWithFrame:self.view.bounds];
     gifLoading.backgroundColor = [UIColor whiteColor];
     
-//    UIWindow * keyWindow = [UIApplication sharedApplication].keyWindow;
     [self.view addSubview:gifLoading];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [gifLoading setState:CLLoadStateFailed];
-    });
+    __weak CLGifLoadView * gifload = gifLoading;
+    [gifLoading setRetryBlcok:^{
+        NSLog(@"重试");
+        [gifload setState:CLLoadStateLoading];
+    }];
 }
 
 - (void)loadNewData{
@@ -56,7 +58,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strId];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%zi",indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"第%zi行",indexPath.row+1];
     return cell;
 }
 

@@ -135,7 +135,18 @@
             self.gifView.animationDuration = [self.stateDurations[@(state)] doubleValue];
             [self.gifView startAnimating];
         }
-
+        static BOOL isFirst = YES;
+        if (isFirst) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self setState:CLLoadStateFailed];
+            });
+            isFirst = NO;
+        }
+        else{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self setState:CLLoadStateFinish];
+            });
+        }
     }else if (state == CLLoadStateFinish){
         [self hide:self After:2];
     }
