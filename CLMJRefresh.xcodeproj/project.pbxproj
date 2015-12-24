@@ -79,6 +79,7 @@
 		5665674C1C23DF54002683A6 /* wanzi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5665671F1C23DF54002683A6 /* wanzi@3x.png */; };
 		566567521C23DFA3002683A6 /* CLRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 566567511C23DFA3002683A6 /* CLRefreshHeader.m */; };
 		566567551C23E703002683A6 /* CLGifLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 566567541C23E703002683A6 /* CLGifLoadView.m */; };
+		567776221C2B9950004D509A /* 2015-12-24 11_08_31.gif in Resources */ = {isa = PBXBuildFile; fileRef = 567776211C2B9950004D509A /* 2015-12-24 11_08_31.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -179,6 +180,7 @@
 		566567511C23DFA3002683A6 /* CLRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRefreshHeader.m; sourceTree = "<group>"; };
 		566567531C23E703002683A6 /* CLGifLoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLGifLoadView.h; sourceTree = "<group>"; };
 		566567541C23E703002683A6 /* CLGifLoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLGifLoadView.m; sourceTree = "<group>"; };
+		567776211C2B9950004D509A /* 2015-12-24 11_08_31.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "2015-12-24 11_08_31.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 		566566961C23DB6B002683A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				567776211C2B9950004D509A /* 2015-12-24 11_08_31.gif */,
 				566566971C23DB6B002683A6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -480,6 +483,7 @@
 				566567471C23DF54002683A6 /* icon_refresh_6@3x.png in Resources */,
 				566567341C23DF54002683A6 /* icon_hud_6@2x.png in Resources */,
 				5665672E1C23DF54002683A6 /* icon_hud_3@2x.png in Resources */,
+				567776221C2B9950004D509A /* 2015-12-24 11_08_31.gif in Resources */,
 				5665672C1C23DF54002683A6 /* icon_hud_2@2x.png in Resources */,
 				5665673B1C23DF54002683A6 /* icon_hud_9@3x.png in Resources */,
 				566567321C23DF54002683A6 /* icon_hud_5@2x.png in Resources */,
@@ -657,6 +661,7 @@
 				566566AC1C23DB6B002683A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
