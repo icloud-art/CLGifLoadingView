@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "CLViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    ViewController * rootVC = [[ViewController alloc]init];
+    CLViewController * rootVC = [[CLViewController alloc]init];
     UINavigationController * navCtrl = [[UINavigationController alloc]initWithRootViewController:rootVC];
     self.window.rootViewController = navCtrl;
     [self.window makeKeyAndVisible];
